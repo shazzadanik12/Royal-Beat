@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Royal Beats | Order Confirmation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- for carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg float-left w-100 b-shadow fixed-top w-100 bg-white py-4 py-lg-3 main-nav">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-3 position-static">
+                    <a class="navbar-brand m-0 p-0 main-logo" href="index.html"><img src="img/logo.svg" class="logo w-100" alt=""></a>
+                    <button class="navbar-toggler border-0 p-0 position-absolute" type="button">
+                        <img src="img/hamb_menu.svg" alt="">
+                    </button>
+                </div>
+                <div class="collapse w-75 h-100 position-fixed bg-white d-block d-lg-none mobi-nav">
+                    <a href="index.html" class="float-left navbar-brand-mobi w-100"><img src="img/logo.svg" class="logo w-100" alt=""></a>
+                    <ul class="navbar-nav mr-auto float-left w-100 pl-2 mt-4">
+                        <li class="nav-item dropdown mb-2">
+                            <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                categories
+                            </a>
+                            <div class="dropdown-menu w-100 border-0 pl-5 pt-3" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Speakers</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Music Boxs</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Wireless Earphone</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Earphone</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Bamboo box</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#">account</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#">Orders</a>
+                        </li>
+                        <li class="nav-item mb-2 text-uppercase font-weight-bold">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-5 px-0 position-static d-flex flex-row align-items-center">
+                    <div class="search-form-wrap float-left w-100">
+                        <div class="search-form w-100 bg-white d-lg-flex flex-row align-items-center justify-content-center py-3 py-lg-0 px-3 w-100 collapse" id="searchbarshown">
+                            <form action="#" method="post" class="col-12 col-sm-7 col-lg-12 mx-auto px-lg-0">
+                                <div class="input-group">
+                                    <input type="search" class="form-control text-left border-0 rounded-pill text-left font-weight-light py-2 px-4 shadow-inset font-secondary">
+                                    <div class="submit-btn input-group-append pl-2">
+                                        <button type="submit" class="btn btn-block btn-lg text-white btn-orange border-0 rounded-pill px-3 px-md-4 px-xl-5 py-0 d-inline-block font-weight-bold b-shadow animate-normal">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="search-logo d-block d-lg-none position-absolute" data-toggle="collapse" href="#searchbarshown" role="button" aria-expanded="false" aria-controls="searchbarshown">
+                            <img class="w-100 align-middle" src="img/search_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-5 col-xl-4 position-static px-0 pl-md-0 pl-xl-3 d-flex flex-wrap flex-row align-items-center">
+                    <div class="row no-gutters w-100 d-flex flex-wrap flex-row align-items-center justify-content-between cart_menu_wrap">
+                        <div class="col-4 p-0 position-static d-none d-lg-block">
+                            <a href="#" class="d-flex flex-wrap flex-row align-items-center cart_menu_link account ">
+                                <img class="float-left w-25" src="img/account.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Account <span class="d-block font-weight-normal">Log in/register</span></p>
+                            </a>
+                        </div>
+                        <div class="col-4 p-0 position-static d-none d-lg-block">
+                            <a href="#" class="d-flex flex-wrap flex-row align-items-center cart_menu_link star-rating">
+                                <img class="float-left w-25" src="img/star.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Favourites <span class="d-block font-weight-normal">Liked products</span></p>
+                            </a>
+                        </div>
+                        <div class="col-4 p-0 position-static">
+                            <a href="checkout.html" class="d-flex flex-wrap flex-row align-items-center cart_menu_link menu-cart">
+                                <img class="float-left w-25" src="img/carticon.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Cart <span class="d-block font-weight-normal">Check out</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="float-left w-100 d-none d-lg-block pt-3 category-nav-wrap">
+        <div class="common-wrap">
+            <div class="container-fluid">
+                <div class="rounded-pill py-2 px-3 d-flex flex-wrap flex-row justify-content-center category-nav float-left w-100 b-shadow">
+                    <ul class="navbar-nav flex-wrap flex-row justify-content-center w-100 px-3">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="#">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="#">Music Boxs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="#">Wireless Earphone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="#">Earphone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="#">Bamboo box</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-close position-fixed w-100 vh-100 animate-normal"></div>
+
+    <!-- Breadcrumb-wrap -->
+    <div class="breadcrumb-wrap float-left w-100 mt-0 mb-0">
+        <div class="common-wrap p-0 px-lg-4">
+            <div class="container-fluid">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb px-0 px-md-4 m-0">
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal active"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal">Product</li>
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal">Lorem</li>
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal">Cart &amp; Checkout</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="float-left w-100 order-confirm pb-5">
+        <div class="common-wrap px-2 px-lg-4">
+            <div class="container-fluid px-0 px-2">
+                <div class="row no-gutters p-0 p-lg-4 p-md-4 bg-white order-confirm-inner b-shadow">
+                    <div class="float-left w-100">
+                        <div class="row pb-lg-5 justify-content-center w-100 clearifix bg-white py-4 py-lg-5 px-3 mt-3 mt-lg-0 mx-auto b-shadow order-delivery-details">
+                            <div class="col-4 col-xl-3 d-lg-block d-none">
+                                <figure>
+                                    <img src="img/il_logo.svg" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-8 col-xl-7 justify-content-center d-flex flex-wrap">
+                                <h1 class="float-left w-100 text-uppercase text-center mt-lg-5 mt-2 font-weight-bold h1">Order is on the way</h1>
+                                <figure class="d-inline-block d-lg-none mx-auto mt-4 w-25">
+                                    <img src="img/il_logo.svg" alt="" class="img-fluid">
+                                </figure>
+                                <h2 class="float-left w-100 text-center font-weight-bold mt-2 mt-md-2 w-100 h1 ">30 Minutes</h2>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-lg-center justify-content-between float-left w-100 px-3 p-0 p-lg-1 mx-0 mt-4 p-md-4 order-summary">
+                            <div class="col-6 col-lg-6 py-1 px-lg-2 px-1 border-right">
+                                <h6 class="font-weight-bold text-center">Summary:</h6>
+                                <ul class="d-flex flex-wrap justify-content-center mt-md-3 mt-1 list-unstyled">
+                                    <li class="mr-md-2 mt-md-0 mt-2">Code #: 25678392</li>
+                                    <li class="mx-lg-4 mt-md-0 mt-2">Order Date: 17/02/2021</li>
+                                    <li class="mr-md-2 mt-md-0 mt-2">Order Total: $228</li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-6 py-1 px-lg-2 px-1 pl-2 pl -lg-4 border-left mt-md-4 mt-lg-0">
+                                <h6 class="font-weight-bold text-center">Address:</h6>
+                                <ul class="d-flex flex-wrap justify-content-center mt-md-3 mt-1 list-unstyled">
+                                    <li class="mr-md-2 mt-md-0 mt-2">Ahnaf Anik</li>
+                                    <li class="mx-lg-4 mt-md-0 mt-2">113/3, Monesshar Road</li>
+                                    <li class="ml-md-2 mt-md-0 mt-2">Zhigatola, LOREM</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="float-left w-100 product-shower px-3 px-lg-0 mt-4">
+                            <div class="row mx-auto">
+                                <div class="col-12 col-lg-9 px-0 px-lg-3 offset-lg-3">
+                                    <div class="float-left w-100 py-md-2 py-1 px-2 px-md-4 bg-light rounded-pill">
+                                        <ul class="d-flex w-100 justify-content-between list-unstyled mb-0">
+                                            <li class="text-body">Products</li>
+                                            <li class="d-sm-block text-right w-25 ml-4">Sound System</li>
+                                            <li class="text-body">Price</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-product-details float-left w-100 px-3 px-lg-0 py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10 mx-auto px3 p-lg-0">
+                                    <div class="row no-gutters d-flex flex-wrap align-items-center">
+                                        <div class="col-3 px-0">
+                                            <figure class="w-100 mx-auto">
+                                                <img src="img/ci-founders.png" alt="" class="img-fluid">
+                                            </figure>
+                                        </div>
+                                        <div class="col-3 pl-0">
+                                            <h2 class="font-weight-bold h1 mb-0">16" Sound System</h2>
+                                            <div class="d-lg-block d-none pb-4 col-star">
+                                                <img src="img/full_star.svg" alt="">
+                                                <img src="img/full_star.svg" alt="">
+                                                <img src="img/full_star.svg" alt="">
+                                                <img src="img/full_star.svg" alt="">
+                                                <img src="img/w_insstar.svg" alt="">
+                                            </div>
+                                            <img class="d-lg-block d-none" src="img/gift.png" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row no-gutters">
+                                                <div class="col-6 pl-1  pr-1  pl-md-3  pr-md-3">
+                                                    <h4 class="text-right d-md-block d-none">1 x 16 inchis</h4>
+                                                    <h6 class="d-md-none d-block text-right">16 inchi</h6>
+                                                </div>
+                                                <div class="col-6 pr-0">
+                                                    <h4 class="font-weight-bold text-right">$150</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left w-100 py-4 border-top order-calculation">
+                            <div class="common-wrap clearifix px-0 px-lg-3">
+                                <div class="container-fluid mx-auto px-lg-3 px-0">
+                                    <div class="row mx-auto align-items-center">
+                                        <div class="col-12 col-lg-8 d-flex justify-content-center flex-wrap order-lg-0 order-2 mt-lg-0 mt-4">
+                                            <div class="float-left w-100 btn-retailer d-flex justify-content-center flex-wrap">
+                                                <a href="#" class="text-center font-weight-bold text-white rounded-pill blurshadow">Call Us</a>
+                                            </div>
+                                            <a href="#" class="help text-decoration-underline mt-4">Help?</a>
+                                        </div>
+                                        <div class="col-12 col-lg-4 pr-0 pl-0 justify-content-end d-flex flex-wrap">
+                                            <ul class="list-group pr-md-4 pr-0 pb-3 px-3 px-lg-0 col-7 col-md-12 float-right list-unstyled">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pr-md-2 pr-0 font-weight-semibold py-1 py-md-3">
+                                                    Products
+                                                    <h6 class="font-weight-bold mb-0">$150</h6>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pr-md-2 pr-0 font-weight-semibold py-1 py-md-3">
+                                                    Fee
+                                                    <h6 class="font-weight-bold mb-0">$17</h6>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pr-md-2 pr-0 font-weight-semibold py-1 py-md-3">
+                                                    Tax
+                                                    <h6 class="font-weight-bold mb-0">$8</h6>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pr-md-2 pr-0 font-weight-semibold py-1 py-md-3">
+                                                    Delivery
+                                                    <h6 class="font-weight-bold mb-0">$30</h6>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pr-md-2 pr-0 font-weight-semibold py-1 py-md-3">
+                                                    TIP
+                                                    <h6 class="font-weight-bold mb-0">$5</h6>
+                                                </li>
+                                            </ul>
+                                            <ul class="float-left w-100 list-group pr-0 border-mb-top d-flex flex-row justify-content-end px-3 px-lg-0 pr-md-4 pr-0">
+                                                <li class="col-7 col-md-12 list-group-item d-flex justify-content-between align-items-center pt-3 border-top border-right-0 pl-0 border-left-0 border-bottom-0 font-weight-semibold pr-0">
+                                                    Total
+                                                    <h2 class="font-weight-bold">$210</h2>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Style -->
+    <div class="footer float-left w-100 py-4 mt-3">
+        <div class="common-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row align-items-center">
+                            <div class=" col-5 col-md-5 col-lg-4 p-0 d-flex flex-row flex-wrap align-items-center justify-content-end justify-content-lg-start">
+                                <p class="float-left pr-lg-4 pr-2 text-uppercase m-0">Powered by</p>
+                                <img src="img/footerimga.svg" alt="">
+                            </div>
+
+                            <div class="col-7 col-md-7 col-lg-3 p-0 text-center d-flex flex-row flex-wrap justify-content-start align-items-center pl-3 pl-lg-0">
+                                <p class="m-0">© 2021, ROYAL BEATS</p>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-5 mt-2 m-lg-0 p-lg-0 p-0  d-flex flex-row flex-wrap justify-content-center justify-content-lg-end">
+                                <a href="#" class=" text-uppercase pr-2 pl-lg-4 px-sm-2">Terms &amp; conditions</a>
+                                <a href="#" class="text-uppercase pr-2 pl-lg-4 px-sm-2">Privacy policy</a>
+                                <a href="address-collection.html" class=" text-uppercase pr-2 pl-lg-4 px-sm-2">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Style -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

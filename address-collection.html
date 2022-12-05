@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Royal Beats | Address Collection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg float-left w-100 b-shadow fixed-top w-100 bg-white py-4 py-lg-3 main-nav">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-3 position-static">
+                    <a class="navbar-brand m-0 p-0 main-logo" href="index.html"><img src="img/logo.svg" class="logo w-100" alt=""></a>
+                    <button class="navbar-toggler border-0 p-0 position-absolute" type="button">
+                        <img src="img/hamb_menu.svg" alt="">
+                    </button>
+                </div>
+                <div class="collapse w-75 h-100 position-fixed bg-white d-block d-lg-none mobi-nav">
+                    <a href="index.html" class="float-left navbar-brand-mobi w-100"><img src="img/logo.svg" class="logo w-100" alt=""></a>
+                    <ul class="navbar-nav mr-auto float-left w-100 pl-2 mt-4">
+                        <li class="nav-item dropdown mb-2">
+                            <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                categories
+                            </a>
+                            <div class="dropdown-menu w-100 border-0 pl-5 pt-3" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="category.html">Speakers</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="category.html">Music Boxs</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="category.html">Wireless Earphone</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="category.html">Earphone</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="category.html">Bamboo box</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-uppercase font-weight-bold" href="order-conf.html">account</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-uppercase font-weight-bold" href="product.html">Orders</a>
+                        </li>
+                        <li class="nav-item mb-2 text-uppercase font-weight-bold">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-5 px-0 position-static d-flex flex-row align-items-center">
+                    <div class="search-form-wrap float-left w-100">
+                        <div class="search-form w-100 bg-white d-lg-flex flex-row align-items-center justify-content-center py-3 py-lg-0 px-3 w-100 collapse" id="searchbarshown">
+                            <form action="#" method="post" class="col-12 col-sm-7 col-lg-12 mx-auto px-lg-0">
+                                <div class="input-group">
+                                    <input type="search" class="form-control text-left border-0 rounded-pill text-left font-weight-light py-2 px-4 shadow-inset font-secondary">
+                                    <div class="submit-btn input-group-append pl-2">
+                                        <button type="submit" class="btn btn-block btn-lg text-white btn-orange border-0 rounded-pill px-3 px-md-4 px-xl-5 py-0 d-inline-block font-weight-bold b-shadow animate-normal">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="search-logo d-block d-lg-none position-absolute" data-toggle="collapse" href="#searchbarshown" role="button" aria-expanded="false" aria-controls="searchbarshown">
+                            <img class="w-100 align-middle" src="img/search_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-5 col-xl-4 position-static px-0 pl-md-0 pl-xl-3 d-flex flex-wrap flex-row align-items-center">
+                    <div class="row no-gutters w-100 d-flex flex-wrap flex-row align-items-center justify-content-between cart_menu_wrap">
+                        <div class="col-4 p-0 position-static d-none d-lg-block">
+                            <a href="" class="d-flex flex-wrap flex-row align-items-center cart_menu_link account ">
+                                <img class="float-left w-25" src="img/account.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Account <span class="d-block font-weight-normal">Log in/register</span></p>
+                            </a>
+                        </div>
+                        <div class="col-4 p-0 position-static d-none d-lg-block">
+                            <a href="" class="d-flex flex-wrap flex-row align-items-center cart_menu_link star-rating">
+                                <img class="float-left w-25" src="img/star.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Favourites <span class="d-block font-weight-normal">Liked products</span></p>
+                            </a>
+                        </div>
+                        <div class="col-4 p-0 position-static">
+                            <a href="checkout.html" class="d-flex flex-wrap flex-row align-items-center cart_menu_link menu-cart">
+                                <img class="float-left w-25" src="img/carticon.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Cart <span class="d-block font-weight-normal">Check out</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-close position-fixed w-100 vh-100 animate-normal"></div>
+    <!--Navbar-->
+
+    <div class="main-wrap float-left w-100 address-collection">
+        <div class=" float-left w-100 position-relative d-flex flex-wrap flex-row align-items-center address-wrap">
+            <div class="address-thumb w-100 h-100 position-absolute">
+                <figure class="w-100 h-100 m-0">
+                    <img src="img/page2_bg_d.png" class="w-100 h-100 d-none d-md-block" alt="">
+                    <img src="img/page2_bg.png" class="w-100 h-100 d-block d-md-none" alt="">
+                </figure>
+            </div>
+            <div class="address-title float-left w-100">
+                <div class="common-wrap clear">
+                    <div class="container-fluid">
+                        <div class="row address-inner">
+                            <div class="col-12 mx-auto px-4">
+                                <h2 class="pb-1 m-auto text-center text-white h1 font-weight-bold text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+                            </div>
+                            <div class="col-9 mx-auto px-0 px-lg-5">
+                                <form action="#" method="post">
+                                    <div class="form-row py-4 ">
+                                        <div class="col-12 px-0 pb-4 pb-md-0 m-auto col-md-9 col-lg-mb-2 col-lg-mb-0">
+                                            <input type="text" class="rounded-pill h6 text-dark bg-light inline-block border-0 form-control form-control-lg font-weight-light mb-0 shadow-inset px-4 font-secondary" placeholder="Your address">
+                                        </div>
+                                        <div class="col-6 col-lg-3 m-auto pl-0 pl-md-2 pl-lg-4 col-md-3">
+                                            <button type="submit" class="btn btn-block btn-lg text-white btn-orange rounded-pill shadow-inset border-0">Go</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid page2_s2 px-0 pb-4 float-left w-100">
+            <div class="common-wrap clear">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            <div class="bg-white booze-inner b-shadow">
+                                <div class="col-10 col-lg-8 m-auto">
+                                    <div class="row">
+                                        <img src="img/il_logo.svg" class="col-7 m-auto col-lg-4 px-4" alt="">
+                                        <div class="p-0 col-12 col-lg-8 m-auto">
+                                            <h3 class="text-center h2 font-weight-bold">What is Royal Beats?</h3>
+                                            <p class="text-center font-weight-light mt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 p-0 mt-4 booze-run">
+                                    <div class=" col-12 col-sm-11 col-lg-8 m-auto px-0 col-lg-px-5 pt-md-3 col-lg-pt-5 pt-lg-5">
+                                        <h3 class="text-center h2 font-weight-bold pb-5">Why you choose Royal Beats?</h3>
+                                        <div class="row">
+                                            <div class="col-4 p-0 d-lg-flex justify-content-lg-between align-items-lg-center d-block">
+                                                <div class="col-12 col-lg-4 text-center p-0">
+                                                    <img src="img/page2_s2_img1.svg" alt="">
+                                                </div>
+                                                <p class="col-8 text-center text-lg-left mx-auto m-md-auto mt-3 mt-lg-0 p-0 pl-lg-3 pt-md-3 font-weight-normal text-uppercase">BEST QUALITY</p>
+                                            </div>
+                                            <div class="col-4 d-block p-0 d-lg-flex justify-content-lg-between align-items-lg-center d-block">
+                                                <div class="col-lg-4 col-12 text-center text-md-center p-0">
+                                                    <img src="img/page2_s2_img2.svg" alt="">
+                                                </div>
+                                                <p class="col-8 mt-3 text-center text-lg-left mx-auto m-md-auto mt-lg-0 p-0 pl-lg-3 pt-md-3 font-weight-normal text-uppercase">BEST SOUND</p>
+                                            </div>
+                                            <div class="col-4 d-block p-0 d-lg-flex justify-content-lg-between align-items-lg-center d-block">
+                                                <div class="col-12 col-lg-4 text-center p-0">
+                                                    <img src="img/page2_s2_img3.svg" alt="">
+                                                </div>
+                                                <p class="col-12 mt-4 text-center text-lg-left mx-auto m-md-auto pt-lg-3 pt-md-4 text-lg-left mt-lg-0 p-0 pl-lg-3 font-weight-normal text-uppercase">LOW PRICE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- News-letter-wrap -->
+        <section class="news-letter-wrap mt-3 float-left w-100">
+            <div class="container-fluid py-5 oder-wrap">
+                <div class="common-wrap clear">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="col-lg-10 offset-lg-2 order-content">
+                                    <h3 class="text-white text-center font-weight-bold">$10 off on first order</h3>
+                                    <p class="text-white text-center mt-2 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 mt-4 p-0">
+                                <form action="#" method="post">
+                                    <div class="form-row d-flex flex-row justify-content-center">
+                                        <div class=" col-7 col-lg-6 p-0 m-0 col-md-6 col-lg-mb-2 col-lg-mb-0">
+                                            <input type="text" class=" text-dark bg-light inline-block border-0 form-control form-control-lg rounded-pill shadow-inset animate-normal">
+                                        </div>
+                                        <div class="col-5 col-lg-3 pl -2 pl-lg-3 col-md-3">
+                                            <button class="w-100 btn btn-block btn-lg text-white btn-blue font-weight-bold p-0 rounded-pill border-0 blur-shadow">GO</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News-letter-wrap -->
+
+    </div>
+
+    <!-- Footer Style -->
+    <div class="footer float-left w-100 py-4 mt-3">
+        <div class="common-wrap clear">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row align-items-center">
+                            <div class=" col-5 col-md-5 col-lg-4 p-0 d-flex flex-row flex-wrap align-items-center justify-content-end justify-content-lg-start">
+                                <p class="float-left pr-lg-4 pr-2 text-uppercase m-0">Powered by</p>
+                                <img src="img/footerimga.svg" alt="">
+                            </div>
+                            <div class="col-7 col-md-7 col-lg-3 p-0 text-center d-flex flex-row flex-wrap justify-content-start align-items-center pl-3 pl-lg-0">
+                                <p class="m-0">© 2021, ROYEL BEATS.</p>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-5 mt-2 m-lg-0 p-lg-0 p-0 d-flex flex-row flex-wrap justify-content-center justify-content-lg-end">
+                                <a href="#" class=" text-uppercase pr-2 pl-lg-4 px-sm-2">Terms &amp; conditions</a>
+                                <a href="#" class="text-uppercase pr-2 pl-lg-4 px-sm-2">Privacy policy</a>
+                                <a href="#" class=" text-uppercase pr-2 pl-lg-4 px-sm-2">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Style -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

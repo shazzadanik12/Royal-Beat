@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Royal Beats | Products</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- for carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg float-left w-100 b-shadow fixed-top w-100 bg-white py-4 py-lg-3 main-nav">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-3 position-static">
+                    <a class="navbar-brand m-0 p-0 main-logo" href="index.html"><img src="img/logo.svg" class="logo w-100" alt=""></a>
+                    <button class="navbar-toggler border-0 p-0 position-absolute" type="button">
+                        <img src="img/hamb_menu.svg" alt="">
+                    </button>
+                </div>
+                <div class="collapse w-75 h-100 position-fixed bg-white d-block d-lg-none mobi-nav">
+                    <a href="index.html" class="float-left navbar-brand-mobi w-100"><img src="img/logo.svg" class="logo w-100" alt=""></a>
+                    <ul class="navbar-nav mr-auto float-left w-100 pl-2 mt-4">
+                        <li class="nav-item dropdown mb-2">
+                            <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                categories
+                            </a>
+                            <div class="dropdown-menu w-100 border-0 pl-5 pt-3">
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Speakers</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Music Boxs</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Wireless Earphone</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Earphone</a>
+                                <a class="dropdown-item text-uppercase font-weight-normal py-2 px-0 " href="#">Bamboo box</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#">account</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#">Orders</a>
+                        </li>
+                        <li class="nav-item mb-2 text-uppercase font-weight-bold">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-5 px-0 position-static d-flex flex-row align-items-center">
+                    <div class="search-form-wrap float-left w-100">
+                        <div class="search-form w-100 bg-white d-lg-flex flex-row align-items-center justify-content-center py-3 py-lg-0 px-3 w-100 collapse" id="searchbarshown">
+                            <form action="#" method="post" class="col-12 col-sm-7 col-lg-12 mx-auto px-lg-0">
+                                <div class="input-group">
+                                    <input type="search" class="form-control text-left border-0 rounded-pill text-left font-weight-light py-2 px-4 shadow-inset font-secondary">
+                                    <div class="submit-btn input-group-append pl-2">
+                                        <button type="submit" class="btn btn-block btn-lg text-white btn-orange border-0 rounded-pill px-3 px-md-4 px-xl-5 py-0 d-inline-block font-weight-bold b-shadow animate-normal">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="search-logo d-block d-lg-none position-absolute" data-toggle="collapse" href="#searchbarshown" role="button" aria-expanded="false" aria-controls="searchbarshown">
+                            <img class="w-100 align-middle" src="img/search_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-5 col-xl-4 position-static px-0 pl-md-0 pl-xl-3 d-flex flex-wrap flex-row align-items-center">
+                    <div class="row no-gutters w-100 d-flex flex-wrap flex-row align-items-center justify-content-between cart_menu_wrap">
+                        <div class="col-4 p-0 position-static d-none d-lg-block">
+                            <a href="" class="d-flex flex-wrap flex-row align-items-center cart_menu_link account ">
+                                <img class="float-left w-25" src="img/account.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Account <span class="d-block font-weight-normal">Log in/register</span></p>
+                            </a>
+                        </div>
+                        <div class="col-4 p-0 position-static d-none d-lg-block">
+                            <a href="" class="d-flex flex-wrap flex-row align-items-center cart_menu_link star-rating">
+                                <img class="float-left w-25" src="img/star.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Favourites <span class="d-block font-weight-normal">Liked products</span></p>
+                            </a>
+                        </div>
+                        <div class="col-4 p-0 position-static">
+                            <a href="checkout.html" class="d-flex flex-wrap flex-row align-items-center cart_menu_link menu-cart">
+                                <img class="float-left w-25" src="img/carticon.svg" alt="">
+                                <p class="float-left m-0 pl-1 d-none d-lg-block w-75">Cart <span class="d-block font-weight-normal">Check out</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="float-left w-100 d-none d-lg-block pt-3 category-nav-wrap">
+        <div class="common-wrap">
+            <div class="container-fluid">
+                <div class="rounded-pill py-2 px-3 d-flex flex-wrap flex-row justify-content-center category-nav float-left w-100 b-shadow">
+                    <ul class="navbar-nav flex-wrap flex-row justify-content-center w-100 px-3">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="category.html">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="category.html">Music Boxs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="category.html">Wireless Earphone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="category.html">Earphone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-uppercase text-white" href="category.html">Bamboo box</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav-close position-fixed w-100 vh-100 animate-normal"></div>
+    <!--Navbar-->
+
+    <!-- Breadcrumb-wrap -->
+    <div class="breadcrumb-wrap float-left w-100 mb-0">
+        <div class="common-wrap p-0 px-lg-4">
+            <div class="container-fluid">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb px-0 px-md-4 m-0">
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal active"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal">Product</li>
+                        <li class="breadcrumb-item d-inlin-block font-weight-normal" aria-current="page">Lorem</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="float-left w-100 pb-3 product_page overflow-hidden">
+        <div class="common-wrap">
+            <div class="container-fluid">
+                <div class="bg-white p-0 p-lg-4 pt-0 pt-lg-5 product_page-inner">
+                    <div class="row no-gutters p-0 p-xl-4 pt-0 pt-lg-2 align-items-center">
+                        <div class=" col-12 col-lg-6 pr-lg-4 pr-xl-5 leftside">
+                            <div class="float-left w-100 d-block bg-white p-4 p-lg-0 budlight-inner">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-lg-6 p-0 pl-lg-0 text-center text-lg-unset m-auto d-flex flex-row flex-wrap justify-content-center justify-content-lg-end">
+                                        <img src="img/ci-founders.png" class="img-fluid position-relative bud-light" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-6 border-0 text-center text-lg-left d-flex flex-wrap align-items-center product-content">
+                                        <h2 class="h1 float-left w-100 font-weight-bold">Sound System</h2>
+                                        <div class="float-left w-100 pb-4 f-stars">
+                                            <img src="img/full_star.svg" alt="">
+                                            <img src="img/full_star.svg" alt="">
+                                            <img src="img/full_star.svg" alt="">
+                                            <img src="img/full_star.svg" alt="">
+                                            <img src="img/w_insstar.svg" alt="">
+                                        </div>
+                                        <p class="float-left w-100 d-block d-lg-none font-weight-normal budlight-text text-normal text-left font-secondary px-4">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris. </p>
+                                        <ul class=" float-left w-100 p-0 list-unstyled d-md-block d-flex justify-content-between px-3 px-lg-0 list-item">
+                                            <li class="font-weight-bold pt-2">HIGH</li>
+                                            <li class="font-weight-bold pt-2">Category</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float-left w-100 mt-2 mt-lg-5 mt-md-5 text-center position-relative title">
+                                <h4 class="mb-0 d-inline-block bg-white position-relative px-2">Select Product</h4>
+                            </div>
+                            <div class="float-left w-100 m-0 p-0">
+                                <ul class="nav nav-tabs float-left w-100 mt-0 mt-md-4 justify-content-center border-0 d-flex align-items-center pb-4 pb-lg-0 tab-wrap" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark font-weight-bold active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">PICKUP</a>
+                                    </li>
+                                    <li class="font-weight-normal nav-item">or</li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark font-weight-bold" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">DELIVERY</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel">
+                                        <div class="row float-left w-100 p-0 m-0 pb-md-5 pb-lg-4 mt-lg-3 border-bottom-2 border-left-0 border-right-0 border-top-0 border">
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel">
+                                        <div class="row float-left w-100 p-0 m-0 pb-md-5 pb-lg-4 mt-lg-3 border-bottom-2 border-left-0 border-right-0 border-top-0 border">
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum.</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#exampleModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum.</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum.</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum.</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum.</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-10 m-md-auto col-lg-6 p-0 p-lg-2 pb-3">
+                                                <a href="#" class="d-block text-decoration-none position-relative bg-white p-3 p-lg-2 b-shadow option">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col-7 col-md-12 d-block d-md-flex flex-row align-items-center justify-content-between">
+                                                            <span class="font-weight-bold pack">Lorem ipsum.</span>
+                                                            <span class=" d-block font-italic light">Sound System</span>
+                                                        </div>
+                                                        <div class="col-5 d-block d-md-none">
+                                                            <span class="float-left w-100 badge badge-pill text-white select" data-toggle="modal" data-target="#orderModal">Select</span>
+                                                        </div>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 float-left mt-3 p-0 d-none d-lg-block description-text">
+                                    <span class=" col-4 float-left p-0 font-weight-bold">Product description</span>
+                                    <p class="col-8 float-left font-weight-normal text-dark ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 m-auto col-lg-6 pl-xl-3 mt-md-3 d-md-flex flex-wrap justify-content-end stores-inner" id="orderModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="float-right col-11 m-auto m-lg-0 p-2 overflow-hidden clearfix form-modal modal-dialog stores">
+                                <div class="box_r modal-content border-0">
+                                    <div class="modl clearfix">
+                                        <a href="#" class=" float-right width-auto d-md-none d-lg-none xicon close" data-dismiss="modal" aria-label="Close"><img src="img/xicon.svg" alt=""></a>
+                                        <div class="float-left w-100 position-relative text-center mb-2 title">
+                                            <h4 class="mb-0 d-inline-block bg-white position-relative px-2 font-weight-semibold">All Product In Stock</h4>
+                                        </div>
+                                        <div class="row float-left w-100 m-auto pr-lg-4 pb-5 overflow-auto options">
+                                            <div class="col-12 float-left w- 100 d-flex justify-content-between mt-4 p-4 bg-white b-shadow option">
+                                                <div class="row no-gutters f-stars">
+                                                    <div class="col-6 p-0">
+                                                        <h4 class="d-block w-auto text-uppercase t1">Lorem ipsum</h4>
+                                                        <span class="d-block w-auto font-italic t2">lorem ipsume</span>
+                                                        <span class="d-block w-auto h2 font-weight-bold t3">$200</span>
+                                                        <span class="d-block w-auto font-weight-light t4">Lorem ipsum </span>
+                                                    </div>
+                                                    <div class=" col-6 p-0 ">
+                                                        <div class="float-right d-none d-lg-block sstar">
+                                                            <dfn class="float-left w-auto font-weight-bold ">7</dfn>
+                                                            <div class="float-left w-auto">
+                                                                <img src="img/sstar.svg" class="p-lg-1" alt="">
+                                                                <span class="font-weight-light p-lg-1">Perfect</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="float-left w-100 d-flex justify-content-end mb-2 frow">
+                                                            <input type="text" value="1" class=" col-4 border-0 font-weight-bold p-0 bg-transparent text-center">
+                                                            <img src="img/plicon.svg" class="mr-2 img-fluid plicon" alt="">
+                                                            <img src="img/miicon.svg" class="img-fluid miicon" alt="">
+                                                        </div>
+                                                        <a href="#" class="col-12 col-lg-8 float-right font-weight-bold text-center text-white mt-3 mt-lg-0 text-decoration-none d-lg-block text-lg-center b-shadow addtc animate">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 float-left w- 100 d-flex justify-content-between mt-4 p-4 bg-white b-shadow option">
+                                                <div class="row no-gutters f-stars">
+                                                    <div class="col-6 p-0">
+                                                        <h4 class="d-block w-auto text-uppercase t1">Lorem ipsum</h4>
+                                                        <span class="d-block w-auto font-italic t2">lorem ipsume</span>
+                                                        <span class="d-block w-auto font-weight-bold t3">$150</span>
+                                                        <span class="d-block w-auto font-weight-light t4">Lorem ipsum </span>
+                                                    </div>
+                                                    <div class=" col-6 p-0 rqnt">
+                                                        <div class="float-right d-none d-lg-block  sstar">
+                                                            <dfn class="float-left w-auto font-weight-bold ">9</dfn>
+                                                            <div class="float-left w-auto">
+                                                                <img src="img/sstar.svg" class="p-lg-1" alt="">
+                                                                <span class="font-weight-light p-lg-1">Awesome</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="float-left w-100 d-flex justify-content-end mb-2 frow">
+                                                            <input type="text" value="1" class=" col-4 border-0 font-weight-bold p-0 bg-transparent text-center">
+                                                            <img src="img/plicon.svg" class="mr-2 plicon" alt="">
+                                                            <img src="img/miicon.svg" class="miicon" alt="">
+                                                        </div>
+                                                        <a href="#" class="col-12 col-lg-8 float-right font-weight-bold text-center text-white mt-3 mt-lg-0 text-decoration-none d-lg-block text-lg-center addtc animate">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 float-left w- 100 d-flex justify-content-between mt-4 p-4 bg-white b-shadow option">
+                                                <div class="row no-gutters f-stars">
+                                                    <div class="col-6 p-0">
+                                                        <h4 class="d-block w-auto text-uppercase t1">Lorem ipsum</h4>
+                                                        <span class="d-block w-auto font-italic t2">lorem ipsume</span>
+                                                        <span class="d-block w-auto font-weight-bold t3">$190</span>
+                                                        <span class="d-block w-auto font-weight-light t4">Lorem ipsum </span>
+                                                    </div>
+                                                    <div class=" col-6 p-0 ">
+                                                        <div class="float-right d-none d-lg-block sstar">
+                                                            <dfn class="float-left w-auto font-weight-bold ">6</dfn>
+                                                            <div class="float-left w-auto">
+                                                                <img src="img/sstar.svg" class="p-lg-1" alt="">
+                                                                <span class="font-weight-light p-lg-1">good</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="float-left w-100 d-flex justify-content-end mb-2 frow">
+                                                            <input type="text" value="1" class=" col-4 border-0 font-weight-bold p-0 bg-transparent text-center">
+                                                            <img src="img/plicon.svg" class="mr-2 plicon" alt="">
+                                                            <img src="img/miicon.svg" class="miicon" alt="">
+                                                        </div>
+                                                        <a href="#" class="col-12 col-lg-8 float-right font-weight-bold text-center text-white mt-3 mt-lg-0 text-decoration-none d-lg-block text-lg-center addtc animate">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 float-left w- 100 d-flex justify-content-between mt-4 p-4 bg-white b-shadow option">
+                                                <div class="row no-gutters f-stars">
+                                                    <div class="col-6 p-0">
+                                                        <h4 class="d-block w-auto text-uppercase t1">Lorem ipsum</h4>
+                                                        <span class="d-block w-auto font-italic t2">lorem dolor</span>
+                                                        <span class="d-block w-auto font-weight-bold t3">$120</span>
+                                                        <span class="d-block w-auto font-weight-light t4">Lorem ipsum</span>
+                                                    </div>
+                                                    <div class=" col-6 p-0 rqnt">
+                                                        <div class="float-right d-none d-lg-block sstar">
+                                                            <dfn class="float-left w-auto font-weight-bold ">7</dfn>
+                                                            <div class="float-left w-auto">
+                                                                <img src="img/sstar.svg" class="p-lg-1" alt="">
+                                                                <span class="font-weight-light p-lg-1">Good</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="float-left w-100 d-flex justify-content-end mb-2 frow">
+                                                            <input type="text" value="1" class=" col-4 border-0 font-weight-bold p-0 bg-transparent text-center">
+                                                            <img src="img/plicon.svg" class="mr-2 plicon" alt="">
+                                                            <img src="img/miicon.svg" class="miicon" alt="">
+                                                        </div>
+                                                        <a href="#" class="col-12 col-lg-8 float-right font-weight-bold text-center text-white mt-3 mt-lg-0 text-decoration-none d-lg-block text-lg-center addtc animate">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 float-left w- 100 d-flex justify-content-between mt-4 p-4 bg-white b-shadow option">
+                                                <div class="row no-gutters f-stars">
+                                                    <div class="col-6 p-0">
+                                                        <h4 class="d-block w-auto text-uppercase t1">Lorem ipsum</h4>
+                                                        <span class="d-block w-auto font-italic t2">lorem set amet</span>
+                                                        <span class="d-block w-auto font-weight-bold t3">$110</span>
+                                                        <span class="d-block w-auto font-weight-light t4">Lorem ipsum </span>
+                                                    </div>
+                                                    <div class=" col-6 p-0 rqnt">
+                                                        <div class="float-right d-none d-lg-block sstar">
+                                                            <dfn class="float-left w-auto font-weight-bold ">8</dfn>
+                                                            <div class="float-left w-auto">
+                                                                <img src="img/sstar.svg" class="p-lg-1" alt="">
+                                                                <span class="font-weight-light p-lg-1">very Good</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="float-left w-100 d-flex justify-content-end mb-2 frow">
+                                                            <input type="text" value="1" class=" col-4 border-0 font-weight-bold p-0 bg-transparent text-center">
+                                                            <img src="img/plicon.svg" class="mr-2 plicon" alt="">
+                                                            <img src="img/miicon.svg" class="miicon" alt="">
+                                                        </div>
+                                                        <a href="#" class="col-12 col-lg-8 float-right font-weight-bold text-center text-white mt-3 mt-lg-0 text-decoration-none d-lg-block text-lg-center addtc animate">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Style -->
+    <div class="footer float-left w-100 py-4 mt-3">
+        <div class="common-wrap clear">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row align-items-center">
+                            <div class=" col-5 col-md-5 col-lg-4 p-0 d-flex flex-row flex-wrap align-items-center justify-content-end justify-content-lg-start">
+                                <p class="float-left pr-lg-4 pr-2 text-uppercase m-0">Powered by</p>
+                                <img src="img/footerimga.svg" alt="">
+                            </div>
+                            <div class="col-7 col-md-7 col-lg-3 p-0 text-center d-flex flex-row flex-wrap justify-content-start align-items-center pl-3 pl-lg-0">
+                                <p class="m-0">© 2021, ROYAL BEATS</p>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-5 mt-2 m-lg-0 p-lg-0 p-0 d-flex flex-row flex-wrap justify-content-center justify-content-lg-end">
+                                <a href="#" class=" text-uppercase pr-2 pl-lg-4 px-sm-2">Terms &amp; conditions</a>
+                                <a href="#" class="text-uppercase pr-2 pl-lg-4 px-sm-2">Privacy policy</a>
+                                <a href="address-collection.html" class=" text-uppercase pr-2 pl-lg-4 px-sm-2">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Style -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
